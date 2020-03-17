@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Reverse Thrust">
+	<Package name="RV_ReverseThrust">
+		<Container name="Messages">
+			<Key ID="STR_RV_Engine_start">
+				<Original>Start engine !</Original>
+				<French>Allumez les moteurs !</French>
+			</Key>
+			<Key ID="STR_RV_Reverse_engaged">
+				<Original>Auto-reverse is engaged !</Original>
+				<French>Auto-reverse engagé !</French>
+			</Key>
+			<Key ID="STR_RV_Reverse_disengaged">
+				<Original>Auto-reverse is disengaged !</Original>
+				<French>Auto-reverse désengagé !</French>
+			</Key>
+		</Container>
+		<Container name="CBA Keybind">
+			<Key ID="STR_RV_Activation">
+				<Original>Reverse activation</Original>
+				<French>Activation du reverse</French>
+			</Key>
+			<Key ID="STR_RV_Deactivation">
+				<Original>Reverse deactivation</Original>
+				<French>Désactivation du reverse</French>
+			</Key>
+			<Key ID="STR_RV_Propeller">
+				<Original>Allow in flight activation</Original>
+				<French>Activation en vol autorisée</French>
+			</Key>
+		</Container>
+		<Container name="Eden Attributes">
+			<Key ID="STR_RV_ReactorVehicle">
+				<Original>Reactor Airplane</Original>
+				<French>Avion à réacteurs</French>
+			</Key>
+			<Key ID="STR_RV_ReactorVehicle_Tooltip">
+				<Original>Is this a airplane with reactors ?</Original>
+				<French>Est-ce un avion avec des réacteurs ?</French>
+			</Key>
+		</Container>
+	</Package>
+</Project>
