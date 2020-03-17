@@ -1,8 +1,8 @@
 /***************************
 --	Reverse Thrust Script --
---	Version : 2.0		  --
---	Author : Jack Ost	  --
---	All rights reserved	  --
+--	Version : 2.0		      --
+--	Author : Jack Ost	    --
+--	Licence : GNU GPLv3	  --
 ***************************/
 
 _get_velocity = {
@@ -20,7 +20,7 @@ private _veh = vehicle player;
 if(isNull _veh) exitWith {false};
 
 //Si le joueur n'est pas pilote
-if(not ((driver (_veh)) isEqualTo player)) exitWith {false}; //currentPilot TODO
+if(not ((currentPilot (_veh)) isEqualTo player)) exitWith {false};
 
 //Si le reverse est déjà engagé
 if(_veh getVariable ["RV_use",false]) exitWith {false};
@@ -50,8 +50,6 @@ if(_isHeliPlane) then {
 };
 //Initialisation vitesse minimale d'utilisation sur réacteur en km/h
 _dangerSpeed = 108; //getNumber (configFile >> "CfgVehicles" >> _classn >> "stallSpeed");
-//Initialisation Variable de direction
-_dir = direction _veh;
 //Initialisation Variable de décelleration
 _decel = 0;
 

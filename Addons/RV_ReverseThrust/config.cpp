@@ -3,7 +3,7 @@ class CfgPatches
 	class RV_ReverseThrust
 	{
 		units[]={};
-		requiredVersion=1.94;
+		requiredVersion=1.96;
 		requiredAddons[]=
 		{
 			"cba_xeh"
@@ -64,44 +64,4 @@ class RscReverseThrottle: RscText
 	sizeEx="0.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 };
 
-
-/*class CfgFactionClasses
-{
-	class RV_ReverseThrust
-	{
-		displayName="Reverse Thrust";
-		priority=8;
-		side=7;
-	};
-};*/
-/*class CfgFunctions
-{
-	class RV
-	{
-		class Revet
-		{
-			file="RV_ReverseThrust\functions";
-			class init
-			{
-				postInit=1;
-			};
-			class KeyPressed;
-			class Pushback;
-			class translation;
-		};
-	};
-};*/
-/*class UserActionGroups
-{
-	class RT
-	{
-		name="Reverse Thrust";
-		group[]=
-		{
-			"User7",
-			"User8",
-			"User9"
-		};
-	};
-};*/
 #include "CfgEventHandlers.hpp"

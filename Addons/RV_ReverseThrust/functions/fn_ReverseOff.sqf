@@ -1,8 +1,8 @@
 /***************************
 --	Reverse Thrust Script --
---	Version : 2.0		  --
---	Author : Jack Ost	  --
---	All rights reserved	  --
+--	Version : 2.0		      --
+--	Author : Jack Ost	    --
+--	Licence : GNU GPLv3	  --
 ***************************/
 
 //Initialisation variable véhicule
@@ -12,7 +12,7 @@ private _veh = vehicle player;
 if(isNull _veh) exitWith {false};
 
 //Si le joueur n'est pas pilote
-if(not ((driver (_veh)) isEqualTo player)) exitWith {false}; //currentPilot TODO
+if(not ((currentPilot (_veh)) isEqualTo player)) exitWith {false};
 
 //Si le reverse n'est pas engagé
 if(not (_veh getVariable ["RV_use",false])) exitWith {false};
